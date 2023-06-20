@@ -1,0 +1,31 @@
+<div class="card-header">
+  <a class="btn btn-success" (click)="openAddCustomization()" >Add Customization</a>
+</div>
+<br>
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef>NAME</mat-header-cell>
+    <mat-cell *matCellDef="let customization">{{ customization.name }}</mat-cell>
+  </ng-container>
+
+  <!-- Description Column -->
+  <ng-container matColumnDef="category">
+    <mat-header-cell *matHeaderCellDef>CATEGORY</mat-header-cell>
+    <mat-cell *matCellDef="let customization">{{ customization.category }}</mat-cell>
+  </ng-container>
+
+
+
+  <!-- Category Column -->
+  <ng-container matColumnDef="price">
+    <mat-header-cell *matHeaderCellDef>PRICE</mat-header-cell>
+    <mat-cell *matCellDef="let customization">{{ customization.price }}</mat-cell>
+  </ng-container>
+
+
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>

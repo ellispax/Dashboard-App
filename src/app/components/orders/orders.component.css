@@ -1,0 +1,27 @@
+/* .banner {
+  background-color: #e63946;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.banner h5 {
+  font-size: 24px;
+}
+
+.table-header {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.table tbody tr:hover {
+  background-color: #e2e2e2;
+} */
+
+.mat-elevation-z8{
+  padding: 10px;
+}
