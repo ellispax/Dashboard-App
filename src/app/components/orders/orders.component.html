@@ -1,57 +1,81 @@
 <div class="card-header">
- <h3><strong>ORDERS</strong></h3>
-</div>
-<br>
-<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <h3><strong>ORDERS</strong></h3>
+ </div>
+ <br>
+ <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-  <!-- Name Column -->
-  <ng-container matColumnDef="name">
-    <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
-    <mat-cell *matCellDef="let order">{{ order.name }}</mat-cell>
-  </ng-container>
+   <!-- Name Column -->
+   <ng-container matColumnDef="name">
+     <mat-header-cell *matHeaderCellDef>
+       <mat-icon>face</mat-icon>
+       <span>Name</span>
+     </mat-header-cell>
+     <mat-cell *matCellDef="let order">{{ order.name }}</mat-cell>
+   </ng-container>
 
-  <!-- Amount Column -->
-  <ng-container matColumnDef="amount">
-    <mat-header-cell *matHeaderCellDef>Amount</mat-header-cell>
-    <mat-cell *matCellDef="let order">{{ order.amount }}</mat-cell>
-  </ng-container>
+   <!-- Amount Column -->
+   <ng-container matColumnDef="amount">
+     <mat-header-cell *matHeaderCellDef>
+       <mat-icon>money</mat-icon>
+       <span>Amount</span>
+     </mat-header-cell>
+     <mat-cell *matCellDef="let order">{{ order.amount }}</mat-cell>
+   </ng-container>
 
-  <!-- Date Column -->
-  <ng-container matColumnDef="date">
-    <mat-header-cell *matHeaderCellDef>Date</mat-header-cell>
-    <mat-cell *matCellDef="let order">{{ order.date }}</mat-cell>
-  </ng-container>
+   <!-- Date Column -->
+   <ng-container matColumnDef="date">
+     <mat-header-cell *matHeaderCellDef>
+       <mat-icon>date</mat-icon>
+       <span>Date</span>
+     </mat-header-cell>
+     <mat-cell *matCellDef="let order">{{ order.date }}</mat-cell>
+   </ng-container>
 
-  <!-- Status Column -->
-  <ng-container matColumnDef="status">
-    <mat-header-cell *matHeaderCellDef>Status</mat-header-cell>
-    <mat-cell *matCellDef="let order">{{ order.status }}</mat-cell>
-  </ng-container>
+   <!-- Status Column -->
+   <ng-container matColumnDef="status">
+     <mat-header-cell *matHeaderCellDef>
+       <mat-icon>check</mat-icon>
+       <span>Status</span>
+     </mat-header-cell>
+     <mat-cell *matCellDef="let order">{{ order.status }}</mat-cell>
+   </ng-container>
 
-  <!-- Payment Status Column -->
-  <ng-container matColumnDef="paymentStatus">
-    <mat-header-cell *matHeaderCellDef>Payment Status</mat-header-cell>
-    <mat-cell *matCellDef="let order">{{ order.paymentStatus }}</mat-cell>
-  </ng-container>
+   <!-- Payment Status Column -->
+   <ng-container matColumnDef="paymentStatus">
+     <mat-header-cell *matHeaderCellDef>
+       <mat-icon>credit_card</mat-icon>
+       <span>Payment Status</span>
+     </mat-header-cell>
+     <mat-cell *matCellDef="let order">{{ order.paymentStatus }}</mat-cell>
+   </ng-container>
 
-  <!-- Delivery Column -->
-  <ng-container matColumnDef="delivery">
-    <mat-header-cell *matHeaderCellDef>Delivery</mat-header-cell>
-    <mat-cell *matCellDef="let order">{{ order.delivery }}</mat-cell>
-  </ng-container>
+   <!-- Delivery Column -->
+   <ng-container matColumnDef="delivery">
+     <mat-header-cell *matHeaderCellDef>
+       <mat-icon>truck</mat-icon>
+       <span>Delivery</span>
+     </mat-header-cell>
+     <mat-cell *matCellDef="let order">{{ order.delivery }}</mat-cell>
+   </ng-container>
 
-  <!-- Category Column -->
-  <ng-container matColumnDef="category">
-    <mat-header-cell *matHeaderCellDef>Category</mat-header-cell>
-    <mat-cell *matCellDef="let order">{{ order.category }}</mat-cell>
-  </ng-container>
+   <!-- Category Column -->
+   <ng-container matColumnDef="category">
+     <mat-header-cell *matHeaderCellDef>
+       <mat-icon>category</mat-icon>
+       <span>Category</span>
+     </mat-header-cell>
+     <mat-cell *matCellDef="let order">{{ order.category }}</mat-cell>
+   </ng-container>
 
-  <!-- Order Number Column -->
-  <ng-container matColumnDef="orderNumber">
-    <mat-header-cell *matHeaderCellDef>Order Number</mat-header-cell>
-    <mat-cell *matCellDef="let order">{{ order.orderNumber }}</mat-cell>
-  </ng-container>
+   <!-- Order Number Column -->
+   <ng-container matColumnDef="orderNumber">
+     <mat-header-cell *matHeaderCellDef>
+       <mat-icon>list</mat-icon>
+       <span>Order Number</span>
+     </mat-header-cell>
+     <mat-cell *matCellDef="let order">{{ order.orderNumber }}</mat-cell>
+   </ng-container>
 
-  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
-</mat-table>
+   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+   <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+ </mat-table>

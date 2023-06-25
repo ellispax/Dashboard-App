@@ -2,7 +2,7 @@
   <button mat-icon-button (click)="sidenav.toggle()" matTooltip="Menu">
       <mat-icon>menu</mat-icon>
   </button>
-  <span>Sweet & Salty</span>
+  <span>Inventory Managment System</span>
   <span class="toolbar-item-spacer"></span>
   <button mat-icon-button matTooltip="Like">
       <mat-icon>favorite</mat-icon>
@@ -37,20 +37,26 @@
   <mat-sidenav #sidenav mode="side" [class.mat-elevation-z4]="true" class="app-sidenav">
       <mat-nav-list>
           <mat-list-item routerLink="/Dashboard">
-              <mat-icon>dashboard</mat-icon><span>Dashboard</span>
+              <mat-icon>home</mat-icon><span>Home</span>
           </mat-list-item>
 
           <mat-list-item routerLink="/Orders">
-            <mat-icon>library_books</mat-icon><span>Orders</span>
+            <mat-icon>library_books</mat-icon><span>Inventory</span>
           </mat-list-item>
           <mat-list-item routerLink="/product-list">
-            <mat-icon>library_books</mat-icon><span>Products</span>
+            <mat-icon>library_books</mat-icon><span>Orders</span>
           </mat-list-item>
           <mat-list-item routerLink="customizations-list">
-            <mat-icon>build</mat-icon><span>Customizations</span>
+            <mat-icon>local_shipping</mat-icon><span>Suppliers</span>
           </mat-list-item>
           <mat-list-item routerLink="users">
-            <mat-icon>build</mat-icon><span>Admin Users</span>
+            <mat-icon>build</mat-icon><span>Products</span>
+          </mat-list-item>
+          <mat-list-item routerLink="users">
+            <mat-icon>build</mat-icon><span>Reports</span>
+          </mat-list-item>
+          <mat-list-item routerLink="users">
+            <mat-icon>settings</mat-icon><span>Settings</span>
           </mat-list-item>
 
           <mat-expansion-panel [class.mat-elevation-z0]="true">
