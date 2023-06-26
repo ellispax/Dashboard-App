@@ -17,6 +17,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ToastrModule } from 'ngx-toastr';
 import { MatTableModule } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
+// import { MatLineChartModule } from '@angular/material/charts';
+
+
 
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -67,7 +71,9 @@ import { CreateCustomizationComponent } from './components/create-customization/
     ToastrModule.forRoot(),
     NgbModule,
     MatTableModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule,
+    // MatLineChartModule
 
 
 
